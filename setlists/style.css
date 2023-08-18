@@ -1,0 +1,25 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 14px;
+    padding: 8px;
+}
+
+div.sets {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 50% 50%;
+}
+
+dt {
+    font-style: italic;
+    font-weight: bold;
+}
+
+dd:not(.notes) {
+    margin-top: 24px;
+}
+
+dd.notes {
+    font-size: 12px;
+}

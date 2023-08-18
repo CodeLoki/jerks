@@ -1,0 +1,49 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+
+    "settings": {
+        "search.exclude": {
+            "**/.lint-todo": true,
+            "**/dist": true,
+            "**/node_modules": true
+        },
+
+        "[html]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.formatOnSave": true
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.formatOnSave": true
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.formatOnSave": true
+        },
+        "[scss]": {
+            "editor.codeActionsOnSave": {
+                "source.fixAll.stylelint": true
+            }
+        },
+
+        "css.validate": false,
+        "scss.validate": false,
+        "stylelint.packageManager": "pnpm",
+        "stylelint.validate": ["scss", "css"],
+        "cSpell.words": [
+            "setlists"
+        ]
+    },
+
+    "extensions": {
+        "recommendations": [
+            "dbaeumer.vscode-eslint",
+            "stylelint.vscode-stylelint",
+            "esbenp.prettier-vscode"
+        ]
+    }
+}

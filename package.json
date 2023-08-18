@@ -1,0 +1,17 @@
+{
+  "name": "jerks",
+  "version": "1.0.0",
+  "description": "Project for creating/editing hostable Jerks gig set list html page",
+  "main": "index.js",
+  "repository": "https://github.com/CodeLoki/jerks.git",
+  "author": "Mark Haugen <mmhaugen@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.1.0",
+    "prettier": "^3.0.2"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
+  }
+}
