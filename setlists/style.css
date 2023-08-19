@@ -11,15 +11,6 @@ div.sets {
     grid-template-columns: 50% 50%;
 }
 
-dt {
-    font-style: italic;
-    font-weight: bold;
-}
-
-dd:not(.notes) {
-    margin-top: 24px;
-}
-
-dd.notes {
-    font-size: 12px;
+dl + dl {
+    margin-top: 16px;
 }
