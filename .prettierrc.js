@@ -1,9 +1,16 @@
-"use strict";
+'use strict';
 
 module.exports = {
-    singleQuote: true,
-    tabWidth: 4,
-    trailingComma: "none",
-    endOfLine: "auto",
-    printWidth: 120,
+    overrides: [
+        {
+            files: '*.{js,ts}',
+            options: {
+                singleQuote: true,
+                tabWidth: 4,
+                trailingComma: 'none',
+                endOfLine: 'auto',
+                printWidth: 120
+            }
+        }
+    ]
 };

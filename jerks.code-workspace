@@ -24,7 +24,7 @@
             "editor.defaultFormatter": "esbenp.prettier-vscode",
             "editor.formatOnSave": true
         },
-        "[scss]": {
+        "[css]": {
             "editor.codeActionsOnSave": {
                 "source.fixAll.stylelint": true
             }
@@ -32,7 +32,7 @@
 
         "css.validate": false,
         "scss.validate": false,
-        "stylelint.packageManager": "pnpm",
+        "stylelint.packageManager": "yarn",
         "stylelint.validate": ["scss", "css"],
         "cSpell.words": [
             "setlists"
