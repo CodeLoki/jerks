@@ -1,5 +1,5 @@
-import Application from 'jerks-foo/app';
-import config from 'jerks-foo/config/environment';
+import Application from 'jerks/app';
+import config from 'jerks/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';
