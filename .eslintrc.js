@@ -30,7 +30,8 @@ module.exports = {
                 './blueprints/*/index.js',
                 './config/**/*.js',
                 './lib/*/index.js',
-                './server/**/*.js'
+                './server/**/*.js',
+                'gulpfile.js'
             ],
             parserOptions: {
                 sourceType: 'script'
