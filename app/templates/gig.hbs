@@ -1,0 +1,16 @@
+{{page-title @model.title}}
+
+<Back />
+<h2>{{@model.title}}</h2>
+
+<div class="sets">
+    {{#each @model.sets as |set|}}
+        <div>
+            <h3>{{set.title}} ({{set.length}} minutes)</h3>
+
+            {{#each set.songs as |m|}}
+                <Song @song={{m}} />
+            {{/each}}
+        </div>
+    {{/each}}
+</div>

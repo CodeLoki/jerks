@@ -1,0 +1,10 @@
+{{page-title "All Songs"}}
+
+<Back />
+<h2>All Songs</h2>
+
+<div class="all-songs">
+    {{#each @model as |m|}}
+        <Song @song={{m}} />
+    {{/each}}
+</div>

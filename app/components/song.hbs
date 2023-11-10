@@ -1,0 +1,17 @@
+<dl ...attributes>
+    <dt>
+        {{#if this.url}}
+            <a href={{this.url}}>
+                {{@song.title}}
+            </a>
+        {{else}}
+            {{@song.title}}
+        {{/if}}
+    </dt>
+    {{#if @song.pad}}
+        <dd><strong>🥁 {{@song.pad}}</strong></dd>
+    {{/if}}
+    {{#each @song.notes as |note|}}
+        <dd>{{note}}</dd>
+    {{/each}}
+</dl>

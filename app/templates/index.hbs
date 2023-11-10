@@ -1,0 +1,15 @@
+<h1>Convertible Jerk</h1>
+
+<LinkTo @route="all-songs"><strong>All Songs</strong></LinkTo>
+
+<h4>Gigs</h4>
+
+<ul>
+    {{#each @model as |gig|}}
+        <li>
+            <LinkTo @route="gig" @model={{get gig "0"}}>
+                {{get (get gig "1") "title"}}
+            </LinkTo>
+        </li>
+    {{/each}}
+</ul>

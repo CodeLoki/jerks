@@ -12,7 +12,7 @@
             "**/node_modules": true
         },
 
-        "[html]": {
+        "[handlebars]": {
             "editor.defaultFormatter": "esbenp.prettier-vscode",
             "editor.formatOnSave": true
         },
@@ -39,6 +39,9 @@
         "stylelint.packageManager": "yarn",
         "stylelint.validate": ["scss", "css"],
         "cSpell.words": [
+            "Banditos",
+            "Everlong",
+            "Setlist",
             "setlists"
         ]
     },

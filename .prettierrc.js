@@ -11,6 +11,13 @@ module.exports = {
                 endOfLine: 'auto',
                 printWidth: 120
             }
+        },
+        {
+            files: '*.json',
+            options: {
+                singleQuote: false,
+                trailingComma: 'none'
+            }
         }
     ]
 };
