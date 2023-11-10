@@ -1,4 +1,5 @@
 import AllSongs, { SongNames } from './songs';
+import { A } from '@ember/array';
 
 import type { Song } from './songs';
 
@@ -19,11 +20,15 @@ export class Setlist {
 
     constructor(title: SetName, names: SongNames[]) {
         this.title = title;
-        this.songs = names.map((n) => AllSongs.get(n)).compact();
+        this.songs = A(names.map((n) => AllSongs.get(n))).compact();
     }
 
     get length(): number {
-        return Math.round(this.songs.mapBy('length').reduce((sum, length) => sum + length) / 60);
+        return Math.round(
+            A(this.songs)
+                .mapBy('length')
+                .reduce((sum, length) => sum + length) / 60
+        );
     }
 }
 
