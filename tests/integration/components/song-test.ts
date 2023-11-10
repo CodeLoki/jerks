@@ -3,24 +3,33 @@ import { setupRenderingTest } from 'jerks/tests/helpers';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | song', function (hooks) {
+import type { TestContext } from '@ember/test-helpers';
+import type { Song } from 'jerks/songs';
+
+interface Context extends TestContext {
+    song: Song;
+}
+
+module('Integration | Component | song', function (this: Context, hooks) {
     setupRenderingTest(hooks);
 
-    test('it renders', async function (assert) {
-        // Set any properties with this.set('myProperty', 'value');
-        // Handle any actions with this.set('myAction', function(val) { ... });
+    test('it renders', async function (this: Context, assert) {
+        this.song = {
+            title: 'Song title',
+            url: 'test',
+            notes: ['note 1'],
+            pad: 'tambourine',
+            length: 10
+        };
 
-        await render(hbs`<Song />`);
+        await render(hbs`<Song @song={{this.song}} />`);
 
-        assert.dom().hasText('');
-
-        // Template block usage:
-        await render(hbs`
-      <Song>
-        template block text
-      </Song>
-    `);
-
-        assert.dom().hasText('template block text');
+        assert.dom('dl').exists();
+        assert
+            .dom('dt a')
+            .hasAttribute('href', 'https://www.mikeslessons.com/groove/?Mode=view&test')
+            .hasText('Song title');
+        assert.dom('dd strong').hasText('🥁 tambourine');
+        assert.dom('dd:last-child').hasText('note 1');
     });
 });

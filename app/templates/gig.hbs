@@ -5,7 +5,7 @@
 
 <div class="sets">
     {{#each @model.sets as |set|}}
-        <div>
+        <div data-test-set={{set.title}}>
             <h3>{{set.title}} ({{set.length}} minutes)</h3>
 
             {{#each set.songs as |m|}}

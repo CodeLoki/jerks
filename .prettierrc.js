@@ -18,6 +18,13 @@ module.exports = {
                 singleQuote: false,
                 trailingComma: 'none'
             }
+        },
+        {
+            files: '*.hbs',
+            options: {
+                parser: 'glimmer',
+                singleQuote: false
+            }
         }
     ]
 };
