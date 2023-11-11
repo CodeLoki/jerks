@@ -129,3 +129,39 @@ gigs.set(
         new Setlist(SetName.pocket, [SongNames.SnowDay, SongNames.Malibu, SongNames.IWillFollow, SongNames.YouWreckMe])
     ])
 );
+
+gigs.set(
+    '20231209',
+    new Gig(Venue.solace, new Date('2023-12-09T12:00:00.000Z'), [
+        new Setlist(SetName.one, [
+            SongNames.AmericanGirl,
+            SongNames.Alive,
+            SongNames.Sandman,
+            SongNames.Everlong,
+            SongNames.HeyHey,
+            SongNames.IWillFollow,
+            SongNames.JealousAgain,
+            SongNames.Jenny,
+            SongNames.JustLikeHeaven,
+            SongNames.LearnToFly,
+            SongNames.LonelyBoy,
+            SongNames.Possum,
+            SongNames.ShouldIStay
+        ]),
+        new Setlist(SetName.two, [
+            SongNames.StacysMom,
+            SongNames.StuckInMiddle,
+            SongNames.Galway,
+            SongNames.Middle,
+            SongNames.Vertigo,
+            SongNames.Wanted,
+            SongNames.Werewolves,
+            SongNames.Godzilla,
+            SongNames.PumpItUp,
+            SongNames.Shine,
+            SongNames.Song2,
+            SongNames.WhatILike,
+            SongNames.ShookMe
+        ])
+    ])
+);
