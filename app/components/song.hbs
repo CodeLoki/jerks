@@ -11,6 +11,9 @@
     {{#if @song.pad}}
         <dd><strong>🥁 {{@song.pad}}</strong></dd>
     {{/if}}
+    {{#if @song.vox}}
+        <dd>🎤 {{@song.vox}}</dd>
+    {{/if}}
     {{#each @song.notes as |note|}}
         <dd>{{note}}</dd>
     {{/each}}

@@ -5,6 +5,7 @@ export type Song = {
     url: string;
     notes?: string[];
     pad?: string;
+    vox?: string;
     length: number;
 };
 
@@ -131,7 +132,8 @@ fn(SongNames.Good, {
 fn(SongNames.LearnToFly, {
     title: 'Learn to Fly',
     url: 'TimeSig=4/4&Div=16&Title=Learn%20to%20Fly&Author=Foo%20Fighters&Tempo=136&Measures=4&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-o-s-x-|x-x-x-x-x-o-s-x-|&S=|----O-------O---|----O-------O---|----O-----O-----|----O-----O-----|&K=|o-----o---o---o-|o-----o---o---o-|o-----o-o-----o-|o-----o-o-----o-|',
-    notes: ['Drums and rythm flam'],
+    notes: ['Drums and rhythm flam'],
+    vox: '#3',
     pad: 'Tambourine',
     length: 245
 });
@@ -154,6 +156,7 @@ fn(SongNames.Alive, {
     title: 'Alive',
     url: 'TimeSig=4/4&Div=16&Title=Alive&Author=Pearl%20Jam&Tempo=76&Measures=8&H=|c-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|c-x-x-o-x-x-x-x-|x-x-x-o-x-x-x-x-|crrrrrrrrrrrrrrr|rrrrrrrrrrrrrrrr|o-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|&S=|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|O--O--O--O----O-|O--O--O--O----O-|&K=|o--o--o---oo---o|o--o--o---oo---o|o--o--o---oo---o|o--o--o---oo---o|o-o----oo-o----o|o-o----oo-o----o|-oo----oo---o--o|-oo----oo---o--o|',
     notes: [Starter.leadGuitar],
+    vox: 'Rock #5',
     length: 341
 });
 
@@ -196,6 +199,7 @@ fn(SongNames.Sandman, {
     title: 'Enter Sandman',
     url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Enter%20Sandman%20&Author=Metallica&Comments=1x,%202x,%203x,%201x,%200x&Tempo=123&Measures=10&H=|----------------|----------------|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-c-|o-o-o-o-o-o-o-c-|o-o-o-o-o-o-o-c-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-c-|x-x-x-x-x-x-x-c-|&S=|----------------|----------------|----O-------O---|----O-------O---|--------O-------|--------O-------|----O-------O---|----O-------O---|----O---------O-|----O-------O---|&K=|o---o---o---o---|o---o---o---o---|o-------o-------|o-------o-----o-|--------------o-|--------------o-|--------o-------|o-------o-o-----|o-------o---o---|o-------o-o---o-|&T1=|----o-------o-o-|----o-------o-o-|----------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|&T4=|o-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|----------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|',
     notes: [Starter.rhythmGuitar, '1x, 2x, 3x, 1x, 0x'],
+    vox: '#13',
     length: 332
 });
 
@@ -210,6 +214,7 @@ fn(SongNames.Godzilla, {
     title: 'Godzilla',
     url: 'TimeSig=4/4&Div=16&Title=Godzilla&Author=Blue%20Oyster%20Cult&Tempo=92&Measures=8&H=|----------------|----------------|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|c-r-r-r-r-r-r-r-|r-r-r-r-r-r-r-r-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|&S=|----------------|----------OOOOOO|----O-------O---|----O--g-g--O---|----O-------O---|----O-------O---|----O----g--O---|----O----g--O---|&K=|o---o---o---o---|o---o---o---o---|o-------o-o-----|o-o-----o-o-----|o-o-----o-o-----|o-o-----o-o-----|o---------o-----|o-o-------o-----|',
     notes: [Starter.drums],
+    vox: 'Arena',
     length: 222
 });
 
@@ -217,6 +222,7 @@ fn(SongNames.HeyHey, {
     title: 'Hey, Hey, What Can I Do?',
     url: 'TimeSig=4/4&Div=16&Title=Hey%2C%20Hey%2C%20What%20Can%20I%20Do&Author=Led%20Zeppelin&Tempo=78&Measures=6&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-c---|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|&S=|----O-------O-O-|----O-------O---|----O-------O---|----O-------O-O-|----O-------O---|----O----O--O-O-|&K=|o--o---oo--o----|o--o---o-o-o----|o--o---o--o----o|o-o----o-o-o----|o--o---o--o----o|o-o----o---o----|',
     notes: [Starter.leadGuitar],
+    vox: 'Oldies',
     length: 237
 });
 
@@ -315,6 +321,7 @@ fn(SongNames.Possum, {
     title: 'Possum Kingdom',
     url: 'TimeSig=4/4&Div=16&Title=Possum%20Kingdom&Author=Toadies&Tempo=101&Measures=9&H=|x-x-x-x-x-x-x-x-|x-x-x-x-c-x-----|x-x-x-x-x-x-x-x-|x-x-x-x-c-x-c-x-|x-x-c-x-x-x-c-x-|x-x-c-x-x-x-c-x-|x-x-x-x-x-x-x-x-|x-x-x-x-o-x-----|c---c---c---c---|&S=|----O-------O---|----O-----O-----|----O-------O---|----O-----O---O-|----O--O----O--O|----O--O----O--O|-O--O----O--O---|-O--O-----O-----|O---O---O---O---|&K=|o-o-----o-o-----|o-o-----o-------|o-o-----o-o-----|o-o-----o---o---|o-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|o-oo----o-oo----|o-oo----o-------|--o---o---o---o-|',
     notes: [Starter.rhythmGuitar],
+    vox: 'Ballad #3',
     length: 309
 });
 
@@ -336,6 +343,7 @@ fn(SongNames.Sanctuary, {
     title: 'She Sells Sanctuary',
     url: 'TimeSig=4/4&Div=16&Title=She%20Sells%20Sanctuary&Author=The%20Cult&Tempo=139&Measures=6&H=|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-----|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|----------------|&S=|----O-------O---|----O-----OO--OO|----------------|----------------|----------------|f-----f-----f---|&K=|o-------o-------|o-------o-------|o---o---o---o---|o---o---o---o---|o---o---o---o---|--o-o---o-o-----|',
     notes: [Starter.leadGuitar],
+    vox: 'Arena',
     length: 253
 });
 
@@ -392,6 +400,7 @@ fn(SongNames.Wanted, {
     title: 'Wanted, Dead or Alive',
     url: 'TimeSig=4/4&Div=16&Title=Wanted%20Dead%20or%20Alive&Author=Bon%20Jovi&Tempo=150&Measures=6&H=|----------r-r---|----------r-r---|c-r-r-r-r-r-r-r-|r-r-r-r-r-r-r-r-|c-x-x-c-x-x-x-x-|x-x-x-c-x-x-x-x-|&S=|----------------|----------------|----x-------x---|----x-------x---|----O-------O---|----O-------O---|&K=|o-----o-o-------|o-----o-o-------|o-----o---o-----|o-----o---o-----|o-----o---o-----|o-----o---o---oo|',
     notes: [Starter.rhythmGuitar],
+    vox: '#5',
     pad: 'Bell Tree',
     length: 309
 });
@@ -422,6 +431,7 @@ fn(SongNames.AmericanGirl, {
     title: 'American Girl',
     url: 'TimeSig=4/4&Div=16&Title=American%20Girl&Author=Tom%20Petty&Tempo=114&Measures=4&H=|x-x-x-x-x-x-o-x-|x-x-x-x-x-x-o-x-|x-x-x-x-x-o-x-x-|x-x-x-x-x-o-x-x-|&S=|--O---O---O---O-|--O---O---O---O-|------------O---|------------O---|&K=|o--o-o------o---|o--o-o------o---|o--o--o---------|o--o--o---------|',
     notes: [Starter.leadGuitar],
+    vox: 'Ballad #3',
     length: 215
 });
 
@@ -598,13 +608,6 @@ fn(SongNames.Laid, {
     url: 'TimeSig=4/4&Div=16&Title=Laid&Author=James&Tempo=116&Measures=6&H=|----------------|----------------|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x---|x-x-x-x-x-x-x-x-|x-o-x-o-x-o-x-o-|&S=|OOOOOOOOOOOOOOOO|OOOOOOOOOOOOOOOO|----O-------O---|----O-------O---|----O-------O---|----O-------O---|&K=|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|&T1=|----------------|----------------|----------------|--------------o-|----------------|----------------|&T4=|----------------|----------------|----------------|----------------|----------------|----------------|',
     notes: [Starter.guitars],
     length: 157
-});
-
-fn(SongNames.LearningToFly, {
-    title: 'Learning to Fly',
-    url: 'TimeSig=4/4&Div=16&Title=Learning%20to%20Fly&Author=Tom%20Petty&Tempo=117&Measures=8&H=|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-------|x-x-x-x---------|----------------|xxxxx-----------|--xxxx----------|&S=|----O-------O---|----O-------O---|----O-------O---|----O-----O-O-O-|----O-------O---|----O-------O---|------OO--OO--OO|O---------O-O-O-|&K=|o-------o-------|o-------o-------|o-------o-------|o-------o-------|o-------o-------|o-------o-------|o-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|&T1=|----------------|----------------|----------------|----------------|----------------|----------------|--------o---o---|----------------|&T4=|----------------|----------------|----------------|----------------|--------o-o-o-o-|o-o-o-o-o-o-o-o-|----------------|----------------|',
-    notes: [Starter.leadGuitar],
-    length: 183
 });
 
 fn(SongNames.LearningToFly, {
