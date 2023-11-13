@@ -14,6 +14,19 @@ a:visited {
     color: rgb(0 24 103);
 }
 
+header {
+    display: flex;
+    gap: 8px;
+}
+
+header select {
+    margin-left: auto;
+}
+
+header button.active {
+    background: rgb(209 218 249);
+}
+
 div.sets {
     display: grid;
     gap: 16px;
@@ -28,4 +41,8 @@ dl + dl {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+a.back-link.active {
+    display: none;
 }

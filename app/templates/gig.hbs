@@ -1,15 +1,14 @@
-{{page-title @model.title}}
+{{page-title @model.gig.title}}
 
-<Back />
-<h2>{{@model.title}}</h2>
+<h2>{{@model.gig.title}}</h2>
 
 <div class="sets">
-    {{#each @model.sets as |set|}}
+    {{#each @model.gig.sets as |set|}}
         <div data-test-set={{set.title}}>
             <h3>{{set.title}} ({{set.length}} minutes)</h3>
 
             {{#each set.songs as |m|}}
-                <Song @song={{m}} />
+                <Song @song={{m}} @user={{@model.user}} @info={{@model.info}} />
             {{/each}}
         </div>
     {{/each}}

@@ -1,3 +1,26 @@
 {{page-title "Convertible Jerk"}}
 
+<header>
+    <LinkTo @route="index" class="back-link">Back</LinkTo>
+
+    {{! template-lint-disable require-input-label }}
+    <select name="instrument" {{on "change" this.updateUser}}>
+        {{#each this.users as |opt|}}
+            <option value={{opt.v}} selected={{opt.isSelected}}>
+                {{opt.v}}
+            </option>
+        {{/each}}
+    </select>
+
+    {{#each this.buttons as |btn|}}
+        <button
+            type="button"
+            class={{if btn.isSelected "active"}}
+            {{on "click" (fn this.updateIncluded btn.v)}}
+        >
+            {{btn.v}}
+        </button>
+    {{/each}}
+</header>
+
 {{outlet}}

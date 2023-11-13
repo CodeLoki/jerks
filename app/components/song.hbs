@@ -1,20 +1,21 @@
 <dl ...attributes>
     <dt>
-        {{#if this.url}}
-            <a href={{this.url}}>
+        {{#if this.userDetails.url}}
+            <a href={{this.userDetails.url}}>
                 {{@song.title}}
             </a>
         {{else}}
             {{@song.title}}
         {{/if}}
     </dt>
-    {{#if @song.pad}}
-        <dd><strong>🥁 {{@song.pad}}</strong></dd>
+    {{#if @song.startsWith}}
+        <dd>{{@song.startsWith}}</dd>
     {{/if}}
-    {{#if @song.vox}}
-        <dd>🎤 {{@song.vox}}</dd>
-    {{/if}}
-    {{#each @song.notes as |note|}}
-        <dd>{{note}}</dd>
+    {{#each this.details as |d|}}
+        {{#let (get d "0") (get d "1") as |icon details|}}
+            {{#each details.notes as |note|}}
+                <dd>{{icon}} {{note}}</dd>
+            {{/each}}
+        {{/let}}
     {{/each}}
 </dl>

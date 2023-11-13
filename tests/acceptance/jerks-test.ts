@@ -14,7 +14,7 @@ module('Acceptance | jerks', function (hooks) {
         assert.strictEqual(currentURL(), '/');
 
         const cssAll = '[data-test-all-songs]',
-            cssBackLink = '[data-test-back-link]';
+            cssBackLink = '.back-link';
 
         assert.dom('h1').hasText('Convertible Jerk');
         assert.dom(cssAll).hasText('All Songs');
