@@ -197,8 +197,7 @@ fn(SongNames.Alive, {
     length: 341,
     details: {
         [Instrument.drums]: {
-            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Alive&Author=Pearl%20Jam&Tempo=76&Measures=8&H=|c-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|c-x-x-o-x-x-x-x-|x-x-x-o-x-x-x-x-|crrrrrrrrrrrrrrr|rrrrrrrrrrrrrrrr|o-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|&S=|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|O--O--O--O----O-|O--O--O--O----O-|&K=|o--o--o---oo---o|o--o--o---oo---o|o--o--o---oo---o|o--o--o---oo---o|o-o----oo-o----o|o-o----oo-o----o|-oo----oo---o--o|-oo----oo---o--o|',
-            notes: ['2x, 1x, 2x (silent), 2x']
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Alive&Author=Pearl%20Jam&Tempo=76&Measures=8&H=|c-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|c-x-x-o-x-x-x-x-|x-x-x-o-x-x-x-x-|crrrrrrrrrrrrrrr|rrrrrrrrrrrrrrrr|o-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|&S=|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|O--O--O--O----O-|O--O--O--O----O-|&K=|o--o--o---oo---o|o--o--o---oo---o|o--o--o---oo---o|o--o--o---oo---o|o-o----oo-o----o|o-o----oo-o----o|-oo----oo---o--o|-oo----oo---o--o|'
         },
         [Instrument.vox]: {
             notes: ['Rock #5']
@@ -563,7 +562,8 @@ fn(SongNames.StacysMom, {
     length: 198,
     details: {
         [Instrument.drums]: {
-            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Stacy%27s%20Mom&Author=Fountains%20of%20Wayne&Tempo=118&Measures=8&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-o-|x-x-x-x-x-x-x-x-|x-x-x-x-x-------|c-o-o-o-o-o-o-o-|c-c-c-c-c---X---|r-r-r-r-r-r-r-r-|r-r-r-r-r-r-r-r-|&S=|----O-------O---|----O-------O-O-|----O-------O---|----O--O----f---|----O-------O---|----------------|----O-------O---|----O-------O---|&K=|o-------o-------|o-------o-------|o-o-----o-o-----|o-o-----o-o---o-|o-------o-o-----|o-o-o-o-o-------|o-o---o---o---o-|--o-----o-o-----|'
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Stacy%27s%20Mom&Author=Fountains%20of%20Wayne&Tempo=118&Measures=8&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-o-|x-x-x-x-x-x-x-x-|x-x-x-x-x-------|c-o-o-o-o-o-o-o-|c-c-c-c-c---X---|r-r-r-r-r-r-r-r-|r-r-r-r-r-r-r-r-|&S=|----O-------O---|----O-------O-O-|----O-------O---|----O--O----f---|----O-------O---|----------------|----O-------O---|----O-------O---|&K=|o-------o-------|o-------o-------|o-o-----o-o-----|o-o-----o-o---o-|o-------o-o-----|o-o-o-o-o-------|o-o---o---o---o-|--o-----o-o-----|',
+            notes: ['Claps']
         }
     }
 });
@@ -1018,7 +1018,8 @@ fn(SongNames.StuckInMiddle, {
     length: 209,
     details: {
         [Instrument.drums]: {
-            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Stuck%20in%20the%20Middle%20with%20You&Author=Stealers%20Wheel&Tempo=124&Measures=8&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|xxxxxxxxxxxxxxxx|xxxxxxxxxxxxxxxx|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|----b-------b---|----b-------b---|&S=|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----------------|----------------|&K=|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|----------------|----------------|'
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Stuck%20in%20the%20Middle%20with%20You&Author=Stealers%20Wheel&Tempo=124&Measures=8&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|xxxxxxxxxxxxxxxx|xxxxxxxxxxxxxxxx|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|----b-------b---|----b-------b---|&S=|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----------------|----------------|&K=|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|----------------|----------------|',
+            notes: ['Claps', 'Cowbell']
         }
     }
 });

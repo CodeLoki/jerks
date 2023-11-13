@@ -1,7 +1,11 @@
 <dl ...attributes>
     <dt>
         {{#if this.userDetails.url}}
-            <a href={{this.userDetails.url}}>
+            <a
+                href={{this.userDetails.url}}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 {{@song.title}}
             </a>
         {{else}}
