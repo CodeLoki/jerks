@@ -34,10 +34,10 @@ export default class ApplicationController extends Controller {
             }));
     }
 
-    @action updateUser(evt: Event & { target: HTMLSelectElement }): void {
+    @action updateUser(evt: Event): void {
         this.router.transitionTo({
             queryParams: {
-                user: evt.target.value
+                user: (evt.target as HTMLSelectElement).value
             }
         });
     }

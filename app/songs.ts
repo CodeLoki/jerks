@@ -21,6 +21,13 @@ enum StartsWith {
     vocals = 'Vocals'
 }
 
+enum DrumPad {
+    cowbell = 'Cowbell (#641)',
+    claps = 'Claps (#800)',
+    tambourine = 'Tambourine (#727)',
+    bellTree = 'Tree chime (#631)'
+}
+
 export interface Details {
     url?: string;
     notes?: string[];
@@ -159,7 +166,7 @@ fn(SongNames.LearnToFly, {
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Learn%20to%20Fly&Author=Foo%20Fighters&Tempo=136&Measures=4&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-o-s-x-|x-x-x-x-x-o-s-x-|&S=|----O-------O---|----O-------O---|----O-----O-----|----O-----O-----|&K=|o-----o---o---o-|o-----o---o---o-|o-----o-o-----o-|o-----o-o-----o-|',
-            notes: ['Tambourine']
+            notes: [DrumPad.tambourine]
         },
         [Instrument.vox]: {
             url: 'https://lyrics.lyricfind.com/lyrics/foo-fighters-learn-to-fly-1',
@@ -563,7 +570,7 @@ fn(SongNames.StacysMom, {
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Stacy%27s%20Mom&Author=Fountains%20of%20Wayne&Tempo=118&Measures=8&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-o-|x-x-x-x-x-x-x-x-|x-x-x-x-x-------|c-o-o-o-o-o-o-o-|c-c-c-c-c---X---|r-r-r-r-r-r-r-r-|r-r-r-r-r-r-r-r-|&S=|----O-------O---|----O-------O-O-|----O-------O---|----O--O----f---|----O-------O---|----------------|----O-------O---|----O-------O---|&K=|o-------o-------|o-------o-------|o-o-----o-o-----|o-o-----o-o---o-|o-------o-o-----|o-o-o-o-o-------|o-o---o---o---o-|--o-----o-o-----|',
-            notes: ['Claps']
+            notes: [DrumPad.claps]
         }
     }
 });
@@ -608,7 +615,7 @@ fn(SongNames.Wanted, {
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Wanted%20Dead%20or%20Alive&Author=Bon%20Jovi&Tempo=150&Measures=6&H=|----------r-r---|----------r-r---|c-r-r-r-r-r-r-r-|r-r-r-r-r-r-r-r-|c-x-x-c-x-x-x-x-|x-x-x-c-x-x-x-x-|&S=|----------------|----------------|----x-------x---|----x-------x---|----O-------O---|----O-------O---|&K=|o-----o-o-------|o-----o-o-------|o-----o---o-----|o-----o---o-----|o-----o---o-----|o-----o---o---oo|',
-            notes: ['Bell Tree']
+            notes: [DrumPad.bellTree]
         },
         [Instrument.vox]: {
             notes: ['#5']
@@ -634,7 +641,7 @@ fn(SongNames.WhatILike, {
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=What%20I%20Like%20About%20You&Author=The%20Romantis&Tempo=160&Measures=4&H=|x---x---x---x---|x---x---x---x---|c---r---r---r---|r---r---r---r---|&S=|----O-------O---|----O-------O---|----O-O-----O---|----O-O-----O---|&K=|o-----o-o-----o-|o-----o-o-----o-|o-------o-------|o-------o-------|',
-            notes: ['Claps']
+            notes: [DrumPad.claps]
         }
     }
 });
@@ -1019,7 +1026,7 @@ fn(SongNames.StuckInMiddle, {
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Stuck%20in%20the%20Middle%20with%20You&Author=Stealers%20Wheel&Tempo=124&Measures=8&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|xxxxxxxxxxxxxxxx|xxxxxxxxxxxxxxxx|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|----b-------b---|----b-------b---|&S=|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----O-------O-O-|----------------|----------------|&K=|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|----------------|----------------|',
-            notes: ['Claps', 'Cowbell']
+            notes: [DrumPad.cowbell]
         }
     }
 });

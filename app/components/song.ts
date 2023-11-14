@@ -31,3 +31,9 @@ export default class SongComponent extends Component<SongSignature> {
             : [];
     }
 }
+
+declare module '@glint/environment-ember-loose/registry' {
+    export default interface Registry {
+        Song: typeof SongComponent;
+    }
+}

@@ -20,7 +20,7 @@
         "lint:hbs:fix": "ember-template-lint . --fix",
         "lint:js": "eslint . --cache",
         "lint:js:fix": "eslint . --fix",
-        "lint:ts:": "tsc --noemit",
+        "lint:ts:": "glint",
         "start": "ember serve",
         "test": "ember test"
     },
@@ -33,6 +33,9 @@
         "@ember/test-helpers": "^3.2.0",
         "@glimmer/component": "^1.1.2",
         "@glimmer/tracking": "^1.1.2",
+        "@glint/core": "^1.2.1",
+        "@glint/environment-ember-loose": "^1.2.1",
+        "@glint/template": "^1.2.1",
         "@tsconfig/ember": "^3.0.2",
         "@types/qunit": "^2.19.8",
         "@types/rsvp": "^4.0.7",
