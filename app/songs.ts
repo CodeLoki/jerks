@@ -25,7 +25,8 @@ enum DrumPad {
     cowbell = 'Cowbell (#641)',
     claps = 'Claps (#800)',
     tambourine = 'Tambourine (#727)',
-    bellTree = 'Tree chime (#631)'
+    bellTree = 'Tree chime (#631)',
+    china = 'China'
 }
 
 export interface Details {
@@ -129,7 +130,8 @@ export enum SongNames {
     OldApartment,
     ThereSheGoes,
     Whiskey,
-    WhatchaWant
+    WhatchaWant,
+    WhatsUp
 }
 
 const AllSongs = new Map<SongNames, Song>();
@@ -165,7 +167,7 @@ fn(SongNames.LearnToFly, {
     length: 245,
     details: {
         [Instrument.drums]: {
-            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Learn%20to%20Fly&Author=Foo%20Fighters&Tempo=136&Measures=4&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-o-s-x-|x-x-x-x-x-o-s-x-|&S=|----O-------O---|----O-------O---|----O-----O-----|----O-----O-----|&K=|o-----o---o---o-|o-----o---o---o-|o-----o-o-----o-|o-----o-o-----o-|',
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Learn%20to%20Fly&Author=Foo%20Fighters&Tempo=149&Measures=4&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-o-s-x-|x-x-x-x-x-o-s-x-|&S=|----O-------O---|----O-------O---|----O-----O-----|----O-----O-----|&K=|o-----o---o---o-|o-----o---o---o-|o-----o-o-----o-|o-----o-o-----o-|',
             notes: [DrumPad.tambourine]
         },
         [Instrument.vox]: {
@@ -193,7 +195,7 @@ fn(SongNames.Plush, {
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Plush&Author=Stone%20Temple%20Pilots&Comments=2x%2C%201x%2C%202x%20(silent)%2C%202x&Tempo=72&Measures=8&H=|c-o-o-o-o-o-o-o-|o-o-o-o-oss-o---|c-x-o-x-x-x-x-x-|x-x-o-x-x-x-o---|c-rrrrrcrrrrrrrr|c-rrrrrcrrrr----|c-x-o-x-x-x-o-x-|x-x-o-x-x-x-o---|&S=|----O-------O---|----O-------O-OO|----O-------O---|----O-------O-OO|----O-------O--O|----O-------O-OO|----O-------O---|----O-------O-OO|&K=|o-o---o--oo-----|o-o---o--oo-----|o-o---o---o-----|o-o---o--oo-----|o-o----o--o--o--|o-o----o--o--o--|o-oo--o-o-oo----|o-oo--o-o-oo----|&T1=|----------------|----------------|----------------|----------------|----------------|------------o-o-|----------------|----------------|&T4=|----------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|',
-            notes: ['2x, 1x, 2x (silent), 2x']
+            notes: [DrumPad.china, '2x, 1x, 2x (silent), 2x']
         }
     }
 });
@@ -1093,6 +1095,17 @@ fn(SongNames.WhatchaWant, {
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=24&Title=So%20What%27cha%20Want&Author=The%20Record%20Company&Tempo=85&Measures=2&H=|------------------------|------c-----------------|&S=|------O-----------O-----|------O-----------O-----|&K=|o--o--------o--o--------|o--o--------o--o--------|&T1=|--o--o--------o--o------|--o--o--------o--o------|&T4=|o--o--o--o--o--o--o--o--|o--o-----o--o--o--o--o--|'
+        }
+    }
+});
+
+fn(SongNames.WhatsUp, {
+    title: "What's Up?",
+    startsWith: StartsWith.rhythmGuitar,
+    length: 296,
+    details: {
+        [Instrument.drums]: {
+            url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=What's%20Up&Author=4%20Non%20Blondes&Tempo=67&Measures=4&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|c-rrrrrrrrrrrrrr|rrrrrrrrrrrrrrrr|&S=|----x-------x---|----x-------x---|----O-------O---|----O-------O---|&K=|o--o---oo--o---o|o--o---oo--o---o|o-o----oo-oo---o|o-o----oo-oo---o|`
         }
     }
 });

@@ -134,6 +134,7 @@ gigs.set(
     '20231209',
     new Gig(Venue.solace, new Date('2023-12-09T12:00:00.000Z'), [
         new Setlist(SetName.one, [
+            SongNames.Shine,
             SongNames.LonelyBoy,
             SongNames.Everlong,
             SongNames.JealousAgain,
@@ -148,8 +149,9 @@ gigs.set(
             SongNames.Good,
             SongNames.StacysMom,
             SongNames.PumpItUp,
-            SongNames.Shine,
-            SongNames.Alive
+            SongNames.WhatsUp,
+            SongNames.Alive,
+            SongNames.Plush
         ]),
         new Setlist(SetName.two, [
             SongNames.StuckInMiddle,
