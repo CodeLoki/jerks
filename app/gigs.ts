@@ -141,7 +141,6 @@ gigs.set(
             SongNames.HeyHey,
             SongNames.LearnToFly,
             SongNames.HonkyTonk,
-            SongNames.December,
             SongNames.BallAndChain,
             SongNames.MaryJane,
             SongNames.Possum,
@@ -149,7 +148,6 @@ gigs.set(
             SongNames.Good,
             SongNames.StacysMom,
             SongNames.PumpItUp,
-            SongNames.WhatsUp,
             SongNames.Alive,
             SongNames.Plush
         ]),
@@ -160,6 +158,7 @@ gigs.set(
             SongNames.Galway,
             SongNames.AmericanGirl,
             SongNames.Godzilla,
+            SongNames.WhatsUp,
             SongNames.Sandman,
             SongNames.Sanctuary,
             SongNames.ShouldIStay,

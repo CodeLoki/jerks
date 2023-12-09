@@ -403,7 +403,7 @@ fn(SongNames.JealousAgain, {
 });
 
 fn(SongNames.Jenny, {
-    title: '867-5309 (Jenny)',
+    title: 'Jenny (867-5309)',
     startsWith: StartsWith.leadGuitar,
     length: 227,
     details: {
