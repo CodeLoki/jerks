@@ -131,7 +131,9 @@ export enum SongNames {
     ThereSheGoes,
     Whiskey,
     WhatchaWant,
-    WhatsUp
+    WhatsUp,
+    Lips,
+    Jealousy
 }
 
 const AllSongs = new Map<SongNames, Song>();
@@ -1106,6 +1108,29 @@ fn(SongNames.WhatsUp, {
     details: {
         [Instrument.drums]: {
             url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=What's%20Up&Author=4%20Non%20Blondes&Tempo=67&Measures=4&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|c-rrrrrrrrrrrrrr|rrrrrrrrrrrrrrrr|&S=|----x-------x---|----x-------x---|----O-------O---|----O-------O---|&K=|o--o---oo--o---o|o--o---oo--o---o|o-o----oo-oo---o|o-o----oo-oo---o|`
+        }
+    }
+});
+
+fn(SongNames.Lips, {
+    title: 'Lips Like Sugar',
+    startsWith: StartsWith.drumsAndGuitar,
+    length: 292,
+    details: {
+        [Instrument.drums]: {
+            url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Lips%20Like%20Sugar&Author=Echo%20and%20the%20Bunnymen&Comments=bell%20tree&Tempo=130&Measures=6&H=|----------------|----------------|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|c-x-x-x-x-x-x-x-|x-x-x-x-x-------|&S=|----------------|----------O-O-O-|----O-------O---|----O-------O---|----O-------O---|----O-----OOOOOO|&K=|o---o---o---o---|o---o---o---o---|o-------o-------|o-------o-o---o-|o-------o-o-----|o-------o-o-----|&T1=|----------------|----------------|----------------|----------------|----------------|----------------|&T4=|o-o-o-o-o-o-o-o-|o-o-o-o-o-o-o-o-|----------------|----------------|----------------|----------------|`,
+            notes: [DrumPad.bellTree]
+        }
+    }
+});
+
+fn(SongNames.Jealousy, {
+    title: 'Hey Jealousy',
+    startsWith: StartsWith.bass,
+    length: 237,
+    details: {
+        [Instrument.drums]: {
+            url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Hey%20Jealousy&Author=Gin%20Blossoms&Tempo=153&Measures=4&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|&S=|----O-------O---|----O-------O---|----O-------O---|----O-------O---|&K=|o---------o---o-|--o-------o---o-|o---------o---o-|----------o---o-|`
         }
     }
 });
