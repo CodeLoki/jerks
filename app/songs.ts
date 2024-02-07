@@ -349,7 +349,8 @@ fn(SongNames.HonkyTonk, {
     length: 180,
     details: {
         [Instrument.drums]: {
-            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Honky%20Tonk%20Woman&Author=The%20Rolling%20Stones&Tempo=115&Measures=6&H=|----------------|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|&S=|----------O-----|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|&K=|----------------|o---------o---o-|o---------o---o-|o---------o---o-|o-----o-o-----o-|o-----o-o-o---o-|&T1=|----------------|----------------|----------------|----------------|----------------|----------------|&T4=|--------------o-|----------------|----------------|----------------|----------------|----------------|'
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Honky%20Tonk%20Woman&Author=The%20Rolling%20Stones&Tempo=115&Measures=6&H=|----------------|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|&S=|----------O-----|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|&K=|----------------|o---------o---o-|o---------o---o-|o---------o---o-|o-----o-o-----o-|o-----o-o-o---o-|&T1=|----------------|----------------|----------------|----------------|----------------|----------------|&T4=|--------------o-|----------------|----------------|----------------|----------------|----------------|',
+            notes: [DrumPad.cowbell]
         },
         [Instrument.vox]: {
             url: 'https://lyrics.lyricfind.com/lyrics/the-rolling-stones-honky-tonk-women'
