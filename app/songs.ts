@@ -133,7 +133,10 @@ export enum SongNames {
     WhatchaWant,
     WhatsUp,
     Lips,
-    Jealousy
+    Jealousy,
+    MustangSally,
+    BloodySunday,
+    Linger
 }
 
 const AllSongs = new Map<SongNames, Song>();
@@ -1132,6 +1135,39 @@ fn(SongNames.Jealousy, {
     details: {
         [Instrument.drums]: {
             url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Hey%20Jealousy&Author=Gin%20Blossoms&Tempo=153&Measures=4&H=|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|&S=|----O-------O---|----O-------O---|----O-------O---|----O-------O---|&K=|o---------o---o-|--o-------o---o-|o---------o---o-|----------o---o-|`
+        }
+    }
+});
+
+fn(SongNames.MustangSally, {
+    title: 'Mustang Sally',
+    startsWith: StartsWith.all,
+    length: 185,
+    details: {
+        [Instrument.drums]: {
+            url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Mustang%20Sally&Author=Wilson%20Pickett&Tempo=110&Measures=4&MetronomeFreq=4&H=|x-x-x-x-x-o-x-x-|x-x-x-x-x-o-x-x-|x-x-x-x-x-o-x-x-|x-x-x-x-x-o-x-x-|&S=|----O-------O---|----O-------O---|----O-------O---|----O-------O---|&K=|o-------o-o-----|o---------o-----|o---------o-----|o-o-------o---o-|`
+        }
+    }
+});
+
+fn(SongNames.BloodySunday, {
+    title: 'Sunday, Bloody Sunday',
+    startsWith: StartsWith.drums,
+    length: 279,
+    details: {
+        [Instrument.drums]: {
+            url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Sunday%20Bloody%20Sunday&Author=U2&Tempo=100&Measures=8&MetronomeFreq=4&H=|--xx-xxxxxxxxx--|xxxxxx--xxxxxx--|xxxxxxxxxxxxxx-x|xxxxxxxxxxxxxx--|c-xxxxxxxxxxxx-x|c-xxxxxxxxxxxx--|--xx-xxxxxxx-x--|xxxx-x---xxx-x--|&S=|OO--O---------OO|------OO------OO|--------------O-|--------------OO|--------------O-|--------------OO|OO--O-------O-OO|----O-OOO---O-OO|&K=|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|o---o---o---o---|`
+        }
+    }
+});
+
+fn(SongNames.Linger, {
+    title: 'Linger',
+    startsWith: StartsWith.rhythmGuitar,
+    length: 277,
+    details: {
+        [Instrument.drums]: {
+            url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Linger&Author=The%20Cranberries&Tempo=94&Measures=6&MetronomeFreq=4&H=|XxxxXxxxXxxxoooo|Xxxx-xx-xx-xx---|c---------------|----------------|xxxxxxxxxxxxoooo|rrrrrrrrrr-r-r-r|&S=|----------------|----O--O--O--OOO|--ooOoooooooOooo|ooooOoooooooOooo|----------------|----------------|&K=|o-----o---------|o-----o---------|o------o--o-----|o------o--o-----|o-----o---------|o---------------|`
         }
     }
 });
