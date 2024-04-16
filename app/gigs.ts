@@ -64,7 +64,7 @@ gigs.set(
             SongNames.IWillFollow,
             SongNames.LonelyBoy,
             SongNames.IslandInSun,
-            SongNames.PettyInPink,
+            SongNames.PrettyInPink,
             SongNames.JealousAgain,
             SongNames.WorstEnemy,
             SongNames.Wanted
@@ -168,6 +168,52 @@ gigs.set(
             SongNames.Jenny,
             SongNames.JustLikeHeaven,
             SongNames.Song2,
+            SongNames.WhatILike,
+            SongNames.ShookMe
+        ])
+    ])
+);
+
+gigs.set(
+    '20240504',
+    new Gig(Venue.solace, new Date('2024-05-04T12:00:00.000Z'), [
+        new Setlist(SetName.one, [
+            SongNames.Everlong,
+            SongNames.FloatOn,
+            SongNames.HardToHandle,
+            SongNames.HeyHey,
+            SongNames.HonkyTonk,
+            SongNames.Holiday,
+            SongNames.IWillFollow,
+            SongNames.JealousAgain,
+            SongNames.LonelyBoy,
+            SongNames.Malibu,
+            SongNames.MaryJane,
+            SongNames.Plush,
+            SongNames.Possum,
+            SongNames.MustangSally,
+            SongNames.PrettyInPink,
+            SongNames.RingOfFire,
+            SongNames.Shine,
+            SongNames.Lips,
+            SongNames.StacysMom
+        ]),
+        new Setlist(SetName.two, [
+            SongNames.StuckInMiddle,
+            SongNames.Wanted,
+            SongNames.Banditos,
+            SongNames.LearnToFly,
+            SongNames.Sandman,
+            SongNames.Godzilla,
+            SongNames.SnowDay,
+            SongNames.Alive,
+            SongNames.JustWhatINeeded,
+            SongNames.JustLikeHeaven,
+            SongNames.Sanctuary,
+            SongNames.Jenny,
+            SongNames.Middle,
+            SongNames.Galway,
+            SongNames.AmericanGirl,
             SongNames.WhatILike,
             SongNames.ShookMe
         ])

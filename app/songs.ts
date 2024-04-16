@@ -76,7 +76,7 @@ export enum SongNames {
     WorstEnemy,
     Peaches,
     Possum,
-    PettyInPink,
+    PrettyInPink,
     RadioFree,
     Sanctuary,
     Shine,
@@ -136,7 +136,8 @@ export enum SongNames {
     Jealousy,
     MustangSally,
     BloodySunday,
-    Linger
+    Linger,
+    RingOfFire
 }
 
 const AllSongs = new Map<SongNames, Song>();
@@ -502,7 +503,7 @@ fn(SongNames.Possum, {
     }
 });
 
-fn(SongNames.PettyInPink, {
+fn(SongNames.PrettyInPink, {
     title: 'Pretty In Pink',
     startsWith: StartsWith.drums,
     length: 239,
@@ -868,7 +869,7 @@ fn(SongNames.Holiday, {
     length: 240,
     details: {
         [Instrument.drums]: {
-            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=12&Title=Holiday&Author=Green%20Day&Tempo=147&Measures=8&H=|------------|------------|------------|c--c--------|c--x--x--x--|x--x--x--x--|x--x--x--x--|x--x--x--x--|&S=|---O-----O--|---O-----O--|---O-----O--|O--O--OOOOOO|---O-----O--|---O-----O-O|---O-----O--|---O----O--O|&K=|o-----o-----|o-----o-----|o-----o-----|o--o--------|o-----o-----|o-----o-o---|o-----o-----|o-----o--o--|&T1=|------------|------------|------------|------------|------------|------------|------------|------------|&T4=|o--o-oo--o-o|o--o-oooo-oo|o--o-oo--o-o|------------|------------|------------|------------|------------|'
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=12&Title=Holiday&Author=Green%20Day&Tempo=147&Measures=10&H=|------------|------------|------------|c--c--------|c--x--x--x--|x--x--x--x--|x--x--x--x--|x--x--x--x--|x--x--x--x--|------------|&S=|---O-----O--|---O-----O--|---O-----O--|O--O--OOOOOO|---O-O---O-O|---O-O---O-O|---O-O---O-O|---O----O--O|---O-O---O-O|f--------O--|&K=|o--o--o--o--|o--o--o--o--|o--o--o--o--|o--o--o--o--|o--o--o--o--|o--o--o--o--|o--o--o--o--|o--o--o--o--|o--o--o-oo--|------------|&T1=|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|&T4=|o--o-oo--o-o|o--o-oooo-oo|o--o-oo--o-o|------------|------------|------------|------------|------------|------------|------------|'
         }
     }
 });
@@ -1170,4 +1171,22 @@ fn(SongNames.Linger, {
             url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Linger&Author=The%20Cranberries&Tempo=94&Measures=6&MetronomeFreq=4&H=|XxxxXxxxXxxxoooo|Xxxx-xx-xx-xx---|c---------------|----------------|xxxxxxxxxxxxoooo|rrrrrrrrrr-r-r-r|&S=|----------------|----O--O--O--OOO|--ooOoooooooOooo|ooooOoooooooOooo|----------------|----------------|&K=|o-----o---------|o-----o---------|o------o--o-----|o------o--o-----|o-----o---------|o---------------|`
         }
     }
+});
+
+fn(SongNames.HardToHandle, {
+    title: 'Hard to handle',
+    startsWith: StartsWith.drums,
+    length: 188,
+    details: {
+        [Instrument.drums]: {
+            url: `https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Hard%20to%20Handle&Author=The%20Black%20Crowes&Tempo=104&Measures=10&H=%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cc-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cc-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x---%7Cc---------------%7C----------------%7Cc-o-o-o-o-o-o-o-%7Cc--c--c---------%7C&S=%7C----O--O----O---%7C----O--O----O---%7C----O--O----O---%7C----O-------O---%7C----O-------O---%7C----O-------O-OO%7C----------------%7C-----------O----%7C----O-------O---%7C--O--O----------%7C&K=%7Co---------o-----%7Co---------o-----%7Co---------o-----%7Co------o--o-----%7Co-------o-o-----%7Co-------o-o-----%7Co---------------%7C----------------%7Co-------o-------%7Co--o--o---------%7C&T1=%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C------------o---%7C----------------%7C----------ooo---%7C&T4=%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C--------------oo%7C----------------%7C-------------oo-%7C`
+        }
+    }
+});
+
+fn(SongNames.RingOfFire, {
+    title: 'Ring of Fire',
+    startsWith: StartsWith.guitars,
+    length: 300,
+    details: {}
 });
