@@ -1188,5 +1188,9 @@ fn(SongNames.RingOfFire, {
     title: 'Ring of Fire',
     startsWith: StartsWith.guitars,
     length: 300,
-    details: {}
+    details: {
+        [Instrument.drums]: {
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Ring%20of%20Fire&Author=Social%20Distortion&Tempo=180&Measures=6&H=%7Cc---x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-c-----c---c---%7C----c-x-x-x-x-x-%7Cx-x-c-x-x-x-x-x-%7C&S=%7C----O-------O---%7C----O-------O---%7C----O-------O---%7C--O-----O---O---%7C----O-------O---%7C----O-------O---%7C&K=%7Co-------o-o-----%7Co-------o-o-----%7Co-------o-o-----%7Co---o-o---o-----%7Co-------o-o-----%7Co-------o-o---o-%7C'
+        }
+    }
 });
