@@ -178,25 +178,24 @@ gigs.set(
     '20240504',
     new Gig(Venue.solace, new Date('2024-05-04T12:00:00.000Z'), [
         new Setlist(SetName.one, [
-            SongNames.Everlong,
-            SongNames.FloatOn,
             SongNames.HardToHandle,
+            SongNames.FloatOn,
             SongNames.HeyHey,
             SongNames.HonkyTonk,
-            SongNames.Holiday,
+            SongNames.Everlong,
             SongNames.IWillFollow,
+            SongNames.Holiday,
             SongNames.JealousAgain,
             SongNames.LonelyBoy,
             SongNames.Malibu,
             SongNames.MaryJane,
             SongNames.Plush,
             SongNames.Possum,
-            SongNames.MustangSally,
-            SongNames.PrettyInPink,
             SongNames.RingOfFire,
             SongNames.Shine,
             SongNames.Lips,
-            SongNames.StacysMom
+            SongNames.StacysMom,
+            SongNames.JustWhatINeeded
         ]),
         new Setlist(SetName.two, [
             SongNames.StuckInMiddle,
@@ -205,9 +204,7 @@ gigs.set(
             SongNames.LearnToFly,
             SongNames.Sandman,
             SongNames.Godzilla,
-            SongNames.SnowDay,
             SongNames.Alive,
-            SongNames.JustWhatINeeded,
             SongNames.JustLikeHeaven,
             SongNames.Sanctuary,
             SongNames.Jenny,
@@ -215,6 +212,7 @@ gigs.set(
             SongNames.Galway,
             SongNames.AmericanGirl,
             SongNames.WhatILike,
+            SongNames.Song2,
             SongNames.ShookMe
         ])
     ])
