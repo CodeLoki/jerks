@@ -280,7 +280,7 @@ fn(SongNames.December, {
 
 fn(SongNames.Sandman, {
     title: 'Enter Sandman',
-    startsWith: StartsWith.rhythmGuitar,
+    startsWith: StartsWith.drumsAndGuitar,
     length: 332,
     details: {
         [Instrument.drums]: {
@@ -348,7 +348,7 @@ fn(SongNames.HeyYa, {
 });
 
 fn(SongNames.HonkyTonk, {
-    title: 'Honky Tonk',
+    title: 'Honky Tonk Woman',
     startsWith: StartsWith.drums,
     length: 180,
     details: {
@@ -619,7 +619,7 @@ fn(SongNames.Vertigo, {
 
 fn(SongNames.Wanted, {
     title: 'Wanted, Dead or Alive',
-    startsWith: StartsWith.rhythmGuitar,
+    startsWith: StartsWith.drumsAndKeys,
     length: 309,
     details: {
         [Instrument.drums]: {

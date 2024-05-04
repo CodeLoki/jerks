@@ -182,15 +182,15 @@ gigs.set(
             SongNames.FloatOn,
             SongNames.HeyHey,
             SongNames.HonkyTonk,
-            SongNames.Everlong,
-            SongNames.IWillFollow,
             SongNames.JealousAgain,
+            SongNames.IWillFollow,
             SongNames.LonelyBoy,
             SongNames.MaryJane,
+            SongNames.Plush,
             SongNames.RingOfFire,
-            SongNames.Shine,
             SongNames.Lips,
-            SongNames.StacysMom
+            SongNames.StacysMom,
+            SongNames.Shine
         ]),
         new Setlist(SetName.two, [
             SongNames.StuckInMiddle,
@@ -204,12 +204,11 @@ gigs.set(
             SongNames.Sanctuary,
             SongNames.Jenny,
             SongNames.Middle,
-            SongNames.Galway,
             SongNames.AmericanGirl,
             SongNames.WhatILike,
             SongNames.Song2,
             SongNames.ShookMe
         ]),
-        new Setlist(SetName.pocket, [SongNames.Everlong, SongNames.JustWhatINeeded, SongNames.Possum])
+        new Setlist(SetName.pocket, [SongNames.Everlong, SongNames.JustWhatINeeded, SongNames.Possum, SongNames.Galway])
     ])
 );
