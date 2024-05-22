@@ -18,7 +18,8 @@ enum StartsWith {
     drumsAndGuitar = 'Drums and guitar',
     bass = 'Bass',
     guitars = 'Guitars',
-    vocals = 'Vocals'
+    vocals = 'Vocals',
+    keys = 'Keys'
 }
 
 enum DrumPad {
@@ -137,7 +138,10 @@ export enum SongNames {
     MustangSally,
     BloodySunday,
     Linger,
-    RingOfFire
+    RingOfFire,
+    DontChange,
+    Jumper,
+    SoLonely
 }
 
 const AllSongs = new Map<SongNames, Song>();
@@ -1191,6 +1195,39 @@ fn(SongNames.RingOfFire, {
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Ring%20of%20Fire&Author=Social%20Distortion&Tempo=180&Measures=6&H=%7Cc---x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-c-----c---c---%7C----c-x-x-x-x-x-%7Cx-x-c-x-x-x-x-x-%7C&S=%7C----O-------O---%7C----O-------O---%7C----O-------O---%7C--O-----O---O---%7C----O-------O---%7C----O-------O---%7C&K=%7Co-------o-o-----%7Co-------o-o-----%7Co-------o-o-----%7Co---o-o---o-----%7Co-------o-o-----%7Co-------o-o---o-%7C'
+        }
+    }
+});
+
+fn(SongNames.DontChange, {
+    title: `Don't Change`,
+    startsWith: StartsWith.keys,
+    length: 267,
+    details: {
+        [Instrument.drums]: {
+            url: "https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Don't%20Change&Author=INXS&Tempo=162&Measures=6&H=%7Cc-x-x-x-x-x-x-x-%7Cx-x-o-c-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7C&S=%7C----O-------O---%7C----O-O-----O---%7C------------O---%7C------------O---%7C----------------%7C----------------%7C&K=%7Co-------o-------%7Co-------o-------%7Co-------o-------%7Co-------o-------%7C----o-o-----o---%7C----o-o-----o---%7C&T1=%7C----------------%7C----------------%7C----o-o---------%7C----o-o---------%7C----------------%7C----------------%7C&T4=%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C"
+        }
+    }
+});
+
+fn(SongNames.Jumper, {
+    title: 'Jumper',
+    startsWith: StartsWith.rhythmGuitar,
+    length: 277,
+    details: {
+        [Instrument.drums]: {
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Jumper&Author=Third%20Eye%20Blind&Tempo=91&Measures=6&H=%7Cc---------------%7C----------------%7Cc-r-r-r-r-r-r-r-%7Cr-r-r-r-r-r-r-r-%7C----------------%7C----------------%7C&S=%7C----------------%7C----------------%7C----O-------O---%7C----O--g----O---%7C------------O---%7C------------O---%7C&K=%7Co---o---o---o---%7Co---o---o---o---%7Co---------o-----%7Co---------o-----%7Co---o---o---o---%7Co---o---o---o---%7C&T1=%7C-------------o--%7Co--------o--o---%7C----------------%7C----------------%7C-------o--------%7C-------o--------%7C&T4=%7C--o-o-o-o-o-o--o%7Co-o-o-o-o--oo--o%7C----------------%7C----------------%7Co-oo------oo-ooo%7Co-oo-----ooo-ooo%7C'
+        }
+    }
+});
+
+fn(SongNames.SoLonely, {
+    title: 'So Lonely',
+    startsWith: StartsWith.drums,
+    length: 290,
+    details: {
+        [Instrument.drums]: {
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=So%20Lonely&Author=The%20Police&Tempo=154&Measures=6&H=%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-c---%7Cc-r-r-r-r-r-r-r-%7C--c-------c-----%7C&S=%7C--------O-------%7C--------O-------%7C--------O-------%7C--O-----O---O---%7C----O-------O---%7CO-------f-------%7C&K=%7Co-------------o-%7Co-------------o-%7Co-------------o-%7Co---o-------o---%7Co-o---o-o-o---o-%7C--o---o---o---o-%7C&T1=%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C&T4=%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C'
         }
     }
 });
