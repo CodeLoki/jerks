@@ -141,7 +141,9 @@ export enum SongNames {
     RingOfFire,
     DontChange,
     Jumper,
-    SoLonely
+    SoLonely,
+    SweetHome,
+    Cryin
 }
 
 const AllSongs = new Map<SongNames, Song>();
@@ -1224,10 +1226,33 @@ fn(SongNames.Jumper, {
 fn(SongNames.SoLonely, {
     title: 'So Lonely',
     startsWith: StartsWith.drums,
-    length: 290,
+    length: 301,
     details: {
         [Instrument.drums]: {
             url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=So%20Lonely&Author=The%20Police&Tempo=154&Measures=6&H=%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-x-x-%7Cx-x-x-x-x-x-c---%7Cc-r-r-r-r-r-r-r-%7C--c-------c-----%7C&S=%7C--------O-------%7C--------O-------%7C--------O-------%7C--O-----O---O---%7C----O-------O---%7CO-------f-------%7C&K=%7Co-------------o-%7Co-------------o-%7Co-------------o-%7Co---o-------o---%7Co-o---o-o-o---o-%7C--o---o---o---o-%7C&T1=%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C&T4=%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C----------------%7C'
+        }
+    }
+});
+
+fn(SongNames.SweetHome, {
+    title: 'Sweet Home Alabama',
+    startsWith: StartsWith.rhythmGuitar,
+    length: 290,
+    details: {
+        [Instrument.drums]: {
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=16&Title=Sweet%20Home%20Alabama&Author=Lynyrd%20Skynyrd&Tempo=98&Measures=6&H=|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-o-|c-x-x-x-x-x-x-x-|x-x-x-x-x-x-xc--|x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-|&S=|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|----O-------O---|&K=|o-o----oo-o-----|o-o----oo-o-----|o-o-----o-o-----|o-o---o---o--o--|o-o-----o-o-----|o-o---o---o---o-|'
+        }
+    }
+});
+
+fn(SongNames.Cryin, {
+    title: "Cryin'",
+    startsWith: StartsWith.all,
+    length: 302,
+    details: {
+        [Instrument.drums]: {
+            url: 'https://www.mikeslessons.com/groove/?Mode=view&TimeSig=4/4&Div=24&Title=Cryin%27&Author=Aerosmith&Tempo=86&Measures=4&H=|x-x-x-x-xxx-x-x-x-x-xxx-|x-x-x-x-xxx-x-x-x-x-xxx-|c-x-x-x-x-x-x-x-x-x-x-x-|x-x-x-x-x-x-x-x-x-x-x-x-|&S=|------O-----------O-----|------O-----------O-----|------O-----------O-----|------O-----------O-----|&K=|o---------o-o-----------|o---------o-o-----------|o---------o-o---------o-|o---------o-o---o-----o-|',
+            notes: [DrumPad.tambourine]
         }
     }
 });
